@@ -1,0 +1,53 @@
+Amaliy mashqlar (PostgreSQL)
+Quyidagi 5 ta topshiriqni PostgreSQL muhitida bajarib ko'ring:
+1.	"students" nomli jadval yarating. Unda id, ism, yosh va guruh ustunlari bo'lsin.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+create table groups (id serial primary key, title varchar(255) not null);
+
+insert into groups (title) values ('1-sinf');
+insert into groups (title) values ('2-sinf');
+insert into groups (title) values ('3-sinf');
+insert into groups (title) values ('4-sinf');
+
+create table students (id serial primary key, name varchar(255) not null, age integer check (age>0), group_id integer references groups(id));
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+2.	Yaratilgan "students" jadvaliga INSERT buyrug'i yordamida 5 ta talabaning ma'lumotini kiriting.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+insert into students (name, age, group_id) values ('javlon', 34, 1);
+insert into students (name, age, group_id) values ('yashnar', 33, 1);
+insert into students (name, age, group_id) values ('ali', 20, 2);
+insert into students (name, age, group_id) values ('vali', 23, 3);
+insert into students (name, age, group_id) values ('husan', 55, 4);
+insert into students (name, age, group_id) values ('hasan', 55, 3);
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+3.	SELECT va WHERE yordamida yoshi 20 dan katta bo'lgan talabalarni jadvaldan chiqaring.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+select * from students where age>20;
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+4.	UPDATE buyrug'i yordamida bitta talabaning guruhini boshqasiga o'zgartiring.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+update students set group_id=4 where id=7;
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+5.	DELETE buyrug'i yordamida id bo'yicha bitta talabani jadvaldan o'chirib tashlang.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+delete from students where id=4;
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

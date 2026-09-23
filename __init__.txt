@@ -1,0 +1,50 @@
+FastAPI, Ma'lumotlar bazasi, PostgreSQL va Python asoslari
+Savollar to'plami va amaliy mashqlar
+1. Python tilida funksiya (function) deganda nimani tushunasiz?
+2. Yangi funksiya qanday kalit so'z yordamida e'lon qilinadi?
+3. Funksiyaga uzatiladigan parametr va argument o'rtasidagi farq nimada?
+4. return operatori funksiya ichida qanday vazifani bajaradi?
+5. Standart qiymatga ega parametr (default parameter) qanday belgilanadi? Misol yozing.
+6. Ikkita sonni parametr sifatida qabul qilib, ularning yig'indisini qaytaruvchi funksiya yozing.
+7. Berilgan ro'yxatdagi barcha juft sonlarni yangi ro'yxatga yig'ib, uni qaytaruvchi funksiya yozing.
+8. Klass (class) va obyekt (object) tushunchalari o'rtasidagi farq nimada?
+9. __init__ metodi qanday vazifani bajaradi?
+10. self kalit so'zi klass metodlarida nimani anglatadi?
+11. "Student" nomli klass yarating. Unda ism va yosh atributlari, hamda ma'lumotlarni chop etadigan metod bo'lsin.
+12. Yaratilgan "Student" klassidan foydalanib 2 ta turli obyekt hosil qiling va ularning ma'lumotlarini ekranga chiqaring.
+13. Ma'lumotlar bazasi (database) deganda nimani tushunasiz?
+14. Jadval (table), qator (row) va ustun (column) tushunchalarini tushuntirib bering.
+15. Primary key nima uchun ishlatiladi?
+16. Foreign key nima va u jadvallar orasida qanday bog'lanish yaratadi?
+17. SQL nima degani va u nima uchun kerak?
+18. Relyatsion va norelyatsion ma'lumotlar bazalari o'rtasidagi asosiy farq nimada?
+19. PostgreSQL nima va u qanday turdagi ma'lumotlar bazasi boshqaruv tizimi hisoblanadi?
+20. Terminalda psql yordamida PostgreSQL serveriga qanday ulanish mumkin?
+21. psql ichida mavjud bazalar ro'yxatini ko'rish uchun qaysi buyruq ishlatiladi? (\l)
+22. psql ichida joriy bazadagi jadvallar ro'yxatini ko'rish uchun qaysi buyruq ishlatiladi? (\dt)
+23. psql dasturidan chiqish uchun qaysi buyruq yoziladi? (\q)
+24. PostgreSQL'da yangi baza yaratish uchun qaysi SQL buyrug'i ishlatiladi?
+25. SELECT operatori nima uchun kerak?
+26. WHERE sharti so'rovlarda qanday vazifani bajaradi?
+27. INSERT INTO buyrug'i nimaga xizmat qiladi?
+28. UPDATE buyrug'i nima uchun ishlatiladi?
+29. DELETE FROM buyrug'i qanday vazifani bajaradi?
+30. ORDER BY nima uchun kerak va u natijalarni qanday tartiblaydi?
+31. LIMIT kalit so'zi so'rovlarda nima uchun ishlatiladi?
+32. COUNT(), SUM(), AVG() kabi agregat funksiyalar nima uchun kerak?
+33. FastAPI nima va u qaysi maqsadda ishlatiladi?
+34. FastAPI qaysi dasturlash tilida yozilgan?
+35. FastAPI'da yangi endpoint (marshrut) qanday yaratiladi?
+36. @app.get() va @app.post() dekoratorlari o'rtasidagi farq nima?
+37. Pydantic modeli FastAPI'da nima uchun ishlatiladi?
+38. FastAPI'ning avtomatik hujjatlashtirish (Swagger UI) imkoniyati nimadan iborat?
+39. Uvicorn nima va u FastAPI loyihasida qanday rol o'ynaydi?
+40. Path parameter bilan query parameter o'rtasidagi farq nimada?
+
+Amaliy mashqlar (PostgreSQL)
+Quyidagi 5 ta topshiriqni PostgreSQL muhitida bajarib ko'ring:
+1.	"students" nomli jadval yarating. Unda id, ism, yosh va guruh ustunlari bo'lsin.
+2.	Yaratilgan "students" jadvaliga INSERT buyrug'i yordamida 5 ta talabaning ma'lumotini kiriting.
+3.	SELECT va WHERE yordamida yoshi 20 dan katta bo'lgan talabalarni jadvaldan chiqaring.
+4.	UPDATE buyrug'i yordamida bitta talabaning guruhini boshqasiga o'zgartiring.
+5.	DELETE buyrug'i yordamida id bo'yicha bitta talabani jadvaldan o'chirib tashlang.
